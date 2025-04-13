@@ -81,6 +81,43 @@ public class StarPattern {
 			System.out.println();
 		}
 		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		System.out.println();
+		System.out.println("To Print Letter J");
+		int[] arr2 = new int[10];
+		for (int i = 0; i < arr2.length; i++) {
+			if (i == 0) {
+				for (int j = 0; j < arr2.length; j++) {
+					System.out.print("*");
+				}
+			}else {
+				for(int j=0;j<arr2.length-2;j++) {
+					System.out.print(" ");
+				}
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+		for(int k=0;k<arr2.length-2;k++) {
+			System.out.print("*");
+		}
 	}
 	
 	
