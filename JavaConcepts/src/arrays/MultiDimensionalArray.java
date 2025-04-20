@@ -7,8 +7,12 @@ public class MultiDimensionalArray {
 		twoArray[0][1]=5;
 		twoArray[0][2]=7;
 		
-		System.out.println("Length:"+twoArray.length);
-		System.out.println("Row::"+twoArray[0].length);
+		twoArray[1][0]=9;
+		twoArray[1][1]=11;
+		twoArray[1][2]=13;
+		
+		System.out.println("Row:"+twoArray.length);
+		System.out.println("Column::"+twoArray[0].length);
 		
 		for(int i=0;i<twoArray.length;i++) {
 			for(int j=0;j<twoArray[i].length;j++) {
