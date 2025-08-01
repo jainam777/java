@@ -10,7 +10,7 @@ public class MoveZeroToEnd {
 	}
 
 	private static int[] moveToleft(int[] arr) {
-		int count=1, zeroIndex=-1;
+		int zeroIndex=-1;
 		for(int i=0;i<arr.length;i++) {
 			if(arr[i]==0 && zeroIndex==-1) {
 				zeroIndex=i;
