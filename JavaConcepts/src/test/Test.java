@@ -1,19 +1,24 @@
 package test;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 public class Test {
 	public static void main(String[] args) {
-		//String[] input = {"eat", "tea", "tan", "ate", "nat", "bat"};
-		int[][] intervals = {{15, 18}, {1, 3}, {8, 10}, {2, 6}};
-		Arrays.sort(intervals, (a,b)->Integer.compare(a[0],b[0]));
-		System.out.println(Arrays.deepToString(intervals));
+		int[] arr= {7,1,5,3,6,3};
+		int x =Test.maxProfit(arr);
+		System.out.println("Max Profit:::"+x);
 	}
 	
+	private static int maxProfit(int[] arr) {
+		int minPrice=Integer.MAX_VALUE;
+		int maxProfit=0;
+		for(int price:arr) {
+			if(price<minPrice) {
+				minPrice=price;
+			}else if(maxProfit < price-minPrice) {
+				maxProfit= price-minPrice;
+			}
+		}
+		return maxProfit;
+	}
 	
 	
 }
